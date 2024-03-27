@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.side-bar {
+    width: 25vw;
+    height: 100vh;
+    background-color: orange;
+    border: 1px solid;
+}
+
+.addNewToDo {
+}
+
+#addButton {
+    height: 40px;
+    width: 40px;
+    background-color: #F55028;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    align-self: flex-start;
+}
+#todo-form {
+    display: none;
+    border: 1px solid #ccc;
+}
+button[type="submit"] {
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#description,
+#title {
+    width: 100%;
+}
+
+.content {
+    width: 75vw;
+    height: 100vh;
+    background-color: red;
+    border: 1px solid;
+}
