@@ -11,27 +11,41 @@
         <div class="side-bar">
             <div class="addNewToDo">
                 <button id="addButton">+</button>
-                <form id="todo-form" >
+                <form id="todo-form">
                     <label for="title">Title:</label><br>
                     <input type="text" id="title" name="title" required><br>
-                    
+
                     <label for="description">Description:</label><br>
                     <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
-                    
+
                     <label for="dueDate">Due Date:</label><br>
                     <input type="date" id="dueDate" name="dueDate" required><br>
-                    
+
                     <label for="priority">Priority:</label><br>
                     <select id="priority" name="priority">
                         <option value="low">Low</option>
                         <option value="medium">Medium</option>
                         <option value="high">High</option>
                     </select><br><br>
-                    
+
                     <button type="submit">Add</button>
                 </form>
             </div>
+            <div class="project">
+                <div class="project-header">
+                    <h1>Projects</h1>
+                    <button id="add_project">+</button>
+                </div>
+                <div class="project-container">
+                    <div id="projects_content">
+                        <ul>
+                            <li>1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="content">
             <div class="todo">TODO</div>
             <div class="finished">FINISHED</div>
