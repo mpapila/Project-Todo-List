@@ -12,13 +12,16 @@ body {
 }
 
 .side-bar {
-    width: 25vw;
+    width: 20vw;
     height: 100vh;
-    background-color: orange;
+    background-color: #353E98;
     border: 1px solid;
+    color: white;
 }
 
-.addNewToDo {
+.addNewToDo,
+.project {
+    margin: 15px;
 }
 
 #addButton {
@@ -30,11 +33,13 @@ body {
     font-size: medium;
     align-self: flex-start;
 }
+
 #todo-form {
     display: none;
     border: 1px solid #ccc;
 }
-button[type="submit"] {
+
+#add-todo-button {
     padding: 8px;
     background-color: #4caf50;
     color: white;
@@ -45,28 +50,155 @@ button[type="submit"] {
 }
 
 #description,
-#title {
+#title
+ {
     width: 100%;
 }
+
+
 
 .project-header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.project-header button {
+
+#add-project {
     width: 45px;
+    min-width: 45px;
     height: 45px;
-    font-size:x-large;
+    font-size: x-large;
     border-radius: 30px;
     border: 1px #ccc;
     background-color: lightgray;
 }
 
+.model-container {
+    padding: 10px;
+    width: 20vw;
+    height: auto;
+    background: #808080;
+    border: 1px black solid;
+    box-shadow: 18px 12px 12px 6px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.my-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#project-list ,
+#add-project-btn {
+    margin-bottom: 10px;
+}
+#project-label {
+    margin-bottom: 5px;
+    display: block;
+
+}
+
+
+#modal_close_button {
+    width: 30px;
+    height: 30px;
+    font-size: medium;
+    border-radius: 30px;
+    border: 1px #ccc;
+    background-color: lightgray;
+}
+
+
+
 .content {
-    width: 75vw;
+    width: 80vw;
     height: 100vh;
-    background-color: red;
+    background-color: white;
     border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.to-do-upper {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+
+.title {
+    background-color: #F4F4F4;
+    color: #A5A9AC;
+    padding: 2px;
+    font-size: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date {
+    font-size: 10px;
+}
+.todo {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+}
+
+
+.content-container {
+    width: 70vw;
+    background-color: #F2F2F2;
+}
+.content-container h2 {
+    margin-left: 15px;
+    color: #273196;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 3%;
+}
+.todo-container {
+    margin: 5px 15px 25px 15px;
+    padding: 5px;
+}
+.deleteTodoButton {
+    width: 30px;
+    height: 50px;
+    justify-self: end;
+}
+.deleteTodoButton img {
+    width: 15px;
+}
+.btnDone {
+    background-color: white;
+    border: none;
+}
+
+.upper,
+.lower {
+    display: flex;
+    justify-content: space-between;
+}
+.priority {
+    display: flex;
+    width: 30px;
+    /* background-color: #F25F91; */
+    border-radius: 20%;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#descriptionOne {
+    align-self: center;
 }
