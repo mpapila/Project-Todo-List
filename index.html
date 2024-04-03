@@ -23,32 +23,57 @@
 
                     <label for="priority">Priority:</label><br>
                     <select id="priority" name="priority">
-                        <option value="low">Low</option>
-                        <option value="medium">Medium</option>
-                        <option value="high">High</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select><br>
+
+                    <label for="project">Project:</label><br>
+                    <select name="project" id="project">
+                        
                     </select><br><br>
 
-                    <button type="submit">Add</button>
+                    <button type="submit" id="add-todo-button">Add</button>
                 </form>
             </div>
             <div class="project">
                 <div class="project-header">
                     <h1>Projects</h1>
-                    <button id="add_project">+</button>
+                    <button id="add-project">+</button>
+                    <div class="model-container" style="display: none;">
+                        <div class="my-modal">
+                            <h2>New Project</h2>
+                            <button id="modal_close_button">X</button>
+                        </div>
+                        <div class="add-project-list">
+                            <form id="add-project-list">
+                                <label for="project_list" id="project-label" name="title">Project Title:</label>
+                                <input type="text" id="project_list" name="project_list">
+                                <button type="submit" id="add-project-btn">Add</button>
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
                 <div class="project-container">
                     <div id="projects_content">
-                        <ul>
-                            <li>1</li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="content">
-            <div class="todo">TODO</div>
-            <div class="finished">FINISHED</div>
+            <h2>TO-DO LISTS</h2>
+            <div class="to-do-upper">
+                <div class="content-container">
+                    <h2>To Do</h2>
+                    <div class="todo">
+
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
